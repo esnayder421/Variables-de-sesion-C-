@@ -1,0 +1,29 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Principal.master.cs" Inherits="App_VariableSesion.Principal" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <header>
+        <div><h1> SISTEMA DE INFORMACION DE VARIABLES DE SESION </h1></div>
+    </header>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <div id="login">
+           <ul data-role="listview">
+                <li><a id="iniciar" runat="server" href="Login.aspx">Iniciar sesion</a> </li>
+                <li><a id="cerrar" runat="server" href="cerrarsesion.aspx">Cerrar sesion</a> </li>
+           </ul>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
